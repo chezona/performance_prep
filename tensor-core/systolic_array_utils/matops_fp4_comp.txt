@@ -1,0 +1,4 @@
+matrix 0 row 2 col 2: sysarr output 57fe (127.875), python output 57fc (127.75). error: 0.09783935546875%
+matrix 1 row 1 col 2: sysarr output 57ac (122.75), python output 57ab (122.6875). error: 0.050933837890625%
+matrix 1 row 3 col 2: sysarr output 54e3 (78.1875), python output 54e2 (78.125). error: 0.08001708984375%
+total values: 32 mismatching values: 3

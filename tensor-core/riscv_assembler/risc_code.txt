@@ -1,0 +1,170 @@
+org 0x0000
+
+addi $3, $3, weights_1
+addi $4, $4, inputs_1
+addi $5, $5, partials_1
+
+add $3, $3, $0
+
+ld_m $m1, 0($3)
+ld_m $m16, 0($4)
+ld_m $m32, 0($5)
+
+jal gemm_instr
+
+addi $6, $6, out_matrix_1
+
+st_m $m5, 0($6)
+
+addi $7, $7, inputs_2
+addi $8, $8, partials_2
+
+ld_m $m8, 0($7) 
+ld_m $m9, 0($8)
+
+gemm $m10, $m8, $m1, $m9
+
+addi $10, $10, out_matrix_2
+
+st_m $m10, 0($10)
+
+ld_m $m16, inputs_3($0)
+ld_m $m32, partials_3($0)
+ld_m $m1, weights_3($0)
+
+jal gemm_instr
+
+st_m $m5, out_matrix_3($0)
+
+addi $20, $20, 100
+addi $21, $21, 100
+
+branch:
+    beq $20, $21, random
+
+halt
+
+gemm_instr:
+    gemm $m5, $m16, $m1, $m32  # m1 - weight, m16 - input, m32 - partial sum
+    jr $1
+
+random:
+    addi $20, $20, 333
+    j branch
+
+
+weights_1:
+cfw 0x48004500
+cfw 0x47004400
+cfw 0x47004800
+cfw 0x47004200
+cfw 0x48004800
+cfw 0x45004400
+cfw 0x45004000
+cfw 0x42004600
+
+inputs_1:
+cfw 0x40004500
+cfw 0x48004600
+cfw 0x48803c00
+cfw 0x3c004600
+cfw 0x44004880
+cfw 0x42004700
+cfw 0x42004700
+cfw 0x42004500
+
+partials_1:
+cfw 0x48004880
+cfw 0x40004500
+cfw 0x48804700
+cfw 0x48803c00
+cfw 0x3c004800
+cfw 0x48804800
+cfw 0x3c004800
+cfw 0x48004200
+
+inputs_2:
+cfw 0x47004000
+cfw 0x45004880
+cfw 0x40004880
+cfw 0x44004880
+cfw 0x44004700
+cfw 0x45004000
+cfw 0x3c004400
+cfw 0x48004200
+
+partials_2:
+cfw 0x3c004500
+cfw 0x42004200
+cfw 0x47004880
+cfw 0x47004880
+cfw 0x3c004700
+cfw 0x48004000
+cfw 0x45004200
+cfw 0x47004800
+
+weights_3:
+cfw 0x44004800
+cfw 0x40004700
+cfw 0x46003c00
+cfw 0x48804200
+cfw 0x40004700
+cfw 0x45004800
+cfw 0x48804200
+cfw 0x44003c00
+
+inputs_3:
+cfw 0x48004400
+cfw 0x47004000
+cfw 0x3c004880 
+cfw 0x42004500
+cfw 0x44004000
+cfw 0x46004700
+cfw 0x45004700
+cfw 0x48004200
+
+partials_3:
+cfw 0x42004600
+cfw 0x3c004880
+cfw 0x40004800
+cfw 0x47004400
+cfw 0x47004500
+cfw 0x42004600
+cfw 0x3c004400
+cfw 0x40004800 
+
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+
+out_matrix_1:
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+
+out_matrix_2:
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+
+out_matrix_3:
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+cfw 0
+

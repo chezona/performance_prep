@@ -1,0 +1,86 @@
+Week,Task Name,Repo,Category,Priority,Status,Hours,Difficulty,Learning Objectives,Deliverable
+1,Read tiny-gpu README thoroughly,tiny-gpu,GPU Architecture,Critical,Not Started,4,Beginner,Understand GPU architecture components,Architecture notes
+1,Run tiny-gpu simulations,tiny-gpu,GPU Architecture,Critical,Not Started,2,Beginner,Execute matrix addition and multiplication kernels,Working simulation
+1,Watch CUDA MODE Lecture 1,CUDA MODE,Theory,High,Not Started,2,Beginner,Learn profiling CUDA kernels in PyTorch,Lecture notes
+1,Watch CUDA MODE Lecture 2,CUDA MODE,Theory,High,Not Started,2,Beginner,PMPP Book Ch 1-3 recap,Lecture notes
+2,Draw GPU architecture from memory,tiny-gpu,GPU Architecture,Critical,Not Started,2,Intermediate,Solidify architecture understanding,Hand-drawn diagram
+2,Study tiny-gpu scheduler,tiny-gpu,GPU Architecture,High,Not Started,3,Intermediate,Understand instruction scheduling,Scheduler analysis
+2,Watch CUDA MODE Lecture 3,CUDA MODE,Theory,Critical,Not Started,2,Beginner,Getting started with CUDA (Jeremy Howard),Code examples
+2,Watch CUDA MODE Lecture 4,CUDA MODE,Theory,High,Not Started,2,Intermediate,Compute and memory architecture,Architecture notes
+2,Understand memory controllers,tiny-gpu,GPU Architecture,High,Not Started,2,Intermediate,Learn async memory request handling,Memory flow diagram
+3,Study systolic array implementation,tensor-core,Hardware Design,Critical,Not Started,4,Advanced,Understand matrix processor design,Systolic array notes
+3,Analyze MAC units,tensor-core,Hardware Design,High,Not Started,3,Advanced,Learn multiply-accumulate operations,MAC unit diagram
+3,Watch CUDA MODE Lecture 5,CUDA MODE,Theory,High,Not Started,2,Intermediate,CUDA for Python Programmers,Code examples
+4,Understand DRAM FSM,tensor-core,Hardware Design,High,Not Started,3,Advanced,Learn memory access state machines,FSM diagram
+4,Study memory arbiter,tensor-core,Hardware Design,High,Not Started,3,Advanced,Understand request arbitration,Arbiter analysis
+4,Create tensor core architecture diagram,tensor-core,Hardware Design,Critical,Not Started,2,Advanced,Synthesize understanding,Complete architecture diagram
+5,Vector Addition in CUDA,LeetGPU,Kernel Programming,Critical,Not Started,2,Beginner,Learn basic CUDA kernel structure,Working CUDA code
+5,Matrix Multiplication in CUDA,LeetGPU,Kernel Programming,Critical,Not Started,3,Beginner,Understand 2D thread indexing,Working CUDA code
+5,Matrix Transpose in CUDA,LeetGPU,Kernel Programming,Critical,Not Started,2,Beginner,Learn memory coalescing patterns,Working CUDA code
+5,Study CUDA MODE Lecture 2 code,CUDA MODE,Practice,High,Not Started,2,Beginner,Implement lecture examples,Code repository
+6,Color Inversion in CUDA,LeetGPU,Kernel Programming,High,Not Started,2,Beginner,Practice image processing kernels,Working CUDA code
+6,1D Convolution in CUDA,LeetGPU,Kernel Programming,High,Not Started,3,Intermediate,Learn convolution patterns,Working CUDA code
+6,ReLU Activation in CUDA,LeetGPU,Kernel Programming,High,Not Started,1,Beginner,Implement activation functions,Working CUDA code
+6,Watch CUDA MODE Lecture 8,CUDA MODE,Theory,Critical,Not Started,2,Intermediate,CUDA Performance Checklist,Checklist document
+7,Matrix Copy in CUDA,LeetGPU,Kernel Programming,Medium,Not Started,2,Beginner,Practice memory access patterns,Working CUDA code
+7,Leaky ReLU in CUDA,LeetGPU,Kernel Programming,Medium,Not Started,1,Beginner,Implement activation variations,Working CUDA code
+7,Rainbow Table in CUDA,LeetGPU,Kernel Programming,Medium,Not Started,2,Intermediate,Learn hash operations on GPU,Working CUDA code
+7,Study CUDA MODE Lecture 8 code,CUDA MODE,Practice,High,Not Started,2,Intermediate,Implement performance optimizations,Optimized code
+8,Profile easy challenges with Nsight,LeetGPU,Performance,High,Not Started,3,Intermediate,Learn GPU profiling,Performance report
+8,Watch CUDA MODE Lecture 16,CUDA MODE,Theory,High,Not Started,2,Intermediate,Hands-on profiling,Profiling examples
+8,Write GPU memory optimization blog post,Documentation,Writing,Medium,Not Started,3,Intermediate,Synthesize memory concepts,Blog post
+9,Reduction in CUDA,LeetGPU,Kernel Programming,Critical,Not Started,3,Intermediate,Learn reduction patterns,Working CUDA code
+9,Watch CUDA MODE Lecture 9,CUDA MODE,Theory,Critical,Not Started,2,Intermediate,Reductions deep dive,Lecture notes
+9,Study CUDA MODE Lecture 9 code,CUDA MODE,Practice,Critical,Not Started,2,Intermediate,Implement 10+ reduction variants,Code examples
+9,Softmax in CUDA,LeetGPU,Kernel Programming,Critical,Not Started,3,Intermediate,Implement softmax efficiently,Working CUDA code
+10,GEMM in CUDA,LeetGPU,Kernel Programming,Critical,Not Started,4,Advanced,Master matrix multiplication,Optimized CUDA code
+10,Dot Product in CUDA,LeetGPU,Kernel Programming,High,Not Started,2,Intermediate,Optimize vector operations,Working CUDA code
+10,Prefix Sum in CUDA,LeetGPU,Kernel Programming,High,Not Started,3,Intermediate,Learn scan algorithms,Working CUDA code
+11,Study BitNet quantization,BitNet,Quantization,High,Not Started,3,Advanced,Understand 1.58-bit quantization,Quantization notes
+11,Watch CUDA MODE Lecture 7,CUDA MODE,Theory,High,Not Started,2,Advanced,Advanced Quantization,Lecture notes
+11,Vector Addition in Triton,LeetGPU,Kernel Programming,High,Not Started,2,Intermediate,Learn Triton syntax,Working Triton code
+11,Watch CUDA MODE Lecture 14,CUDA MODE,Theory,High,Not Started,2,Intermediate,Practitioner's Guide to Triton,Triton examples
+12,Matrix Multiplication in Triton,LeetGPU,Kernel Programming,High,Not Started,3,Intermediate,Compare with CUDA implementation,Working Triton code
+12,Softmax in Triton,LeetGPU,Kernel Programming,High,Not Started,3,Intermediate,Optimize with Triton,Working Triton code
+12,Watch CUDA MODE Lecture 18,CUDA MODE,Theory,High,Not Started,2,Advanced,Fused Kernels,Fusion examples
+12,Continue medium challenges,LeetGPU,Kernel Programming,High,Not Started,2,Intermediate,Build kernel library,Multiple implementations
+13,Watch CUDA MODE Lecture 12,CUDA MODE,Theory,Critical,Not Started,2,Advanced,Flash Attention basics,Attention notes
+13,Watch CUDA MODE Lecture 13,CUDA MODE,Theory,Critical,Not Started,2,Advanced,Ring Attention,Architecture diagrams
+13,Multi-Head Self-Attention in CUDA,LeetGPU,Kernel Programming,Critical,Not Started,4,Advanced,Master attention mechanisms,Working CUDA code
+13,Study Flash Attention paper,Research,Theory,Critical,Not Started,2,Advanced,Understand attention optimization,Paper notes
+14,Watch CUDA MODE Lecture 36,CUDA MODE,Theory,Critical,Not Started,2,Advanced,Flash Attention 3 + CUTLASS,Implementation notes
+14,Optimize attention kernel,LeetGPU,Performance,Critical,Not Started,5,Advanced,Apply optimization techniques,Optimized kernel
+14,Profile attention with Nsight,LeetGPU,Performance,Critical,Not Started,2,Advanced,Measure performance improvements,Performance report
+15,Study Flash Attention implementation,Research,Theory,High,Not Started,4,Advanced,Understand block-sparse attention,Implementation notes
+15,Implement Flash Attention optimizations,LeetGPU,Kernel Programming,Critical,Not Started,4,Advanced,Apply tiling and memory optimization,Optimized implementation
+16,Profile 3 optimized kernels,LeetGPU,Performance,Critical,Not Started,3,Advanced,Document optimization results,Performance analysis report
+16,Watch CUDA MODE Lecture 23,CUDA MODE,Theory,Critical,Not Started,2,Advanced,Tensor Cores (NVIDIA experts),Tensor core notes
+16,Document optimization techniques,Documentation,Writing,High,Not Started,3,Advanced,Explain optimization decisions,Technical write-up
+17,3D Convolution in CUDA,LeetGPU,Kernel Programming,High,Not Started,4,Advanced,Handle 3D data structures,Working CUDA code
+17,FFT in CUDA,LeetGPU,Kernel Programming,High,Not Started,5,Advanced,Implement signal processing,Working CUDA code
+17,Watch CUDA MODE Lecture 37,CUDA MODE,Theory,High,Not Started,2,Advanced,SASS & GPU Microarchitecture,Assembly understanding
+18,K-Means Clustering in CUDA,LeetGPU,Kernel Programming,High,Not Started,4,Advanced,Implement clustering algorithm,Working CUDA code
+18,Optimize hard challenges,LeetGPU,Performance,High,Not Started,4,Advanced,Maximize performance,Optimized implementations
+18,Measure TFLOPS on A100,LeetGPU,Performance,Medium,Not Started,2,Advanced,Calculate theoretical performance,Performance metrics
+19,Watch CUDA MODE Lecture 15,CUDA MODE,Theory,High,Not Started,2,Advanced,CUTLASS deep dive,CUTLASS examples
+19,Watch CUDA MODE Lecture 57,CUDA MODE,Theory,High,Not Started,2,Advanced,CuTe (template library),CuTe examples
+19,Add cache to tiny-gpu,tiny-gpu,Hardware Design,Medium,Not Started,4,Advanced,Implement instruction cache,Working RTL
+20,Watch CUDA MODE Lecture 29,CUDA MODE,Theory,High,Not Started,2,Advanced,Triton Internals,Compiler understanding
+20,Optimize systolic array utilization,tensor-core,Hardware Design,High,Not Started,4,Advanced,Maximize throughput,Optimization analysis
+20,Profile FP16 vs INT8 performance,tensor-core,Performance,High,Not Started,3,Advanced,Compare precision trade-offs,Performance comparison
+21,Watch CUDA MODE Lecture 30,CUDA MODE,Theory,High,Not Started,2,Advanced,Quantized Training,Training techniques
+21,Watch CUDA MODE Lecture 33,CUDA MODE,Theory,High,Not Started,2,Advanced,BitBLAS,Quantization library
+21,Build custom attention kernel,Portfolio,Project,Critical,Not Started,6,Advanced,Demonstrate kernel optimization skills,Complete project
+22,Watch CUDA MODE Lecture 34,CUDA MODE,Theory,High,Not Started,2,Advanced,Low Bit Triton Kernels,Triton quantization
+22,Build low-precision training kernel,Portfolio,Project,Critical,Not Started,6,Advanced,Show quantization expertise,Complete project
+23,Watch CUDA MODE Lecture 17,CUDA MODE,Theory,High,Not Started,2,Advanced,NCCL Collective Communication,Distributed notes
+23,Watch CUDA MODE Lecture 22,CUDA MODE,Theory,High,Not Started,2,Advanced,Speculative Decoding in VLLM,Production optimization
+23,Memory bandwidth optimization case study,Portfolio,Project,High,Not Started,4,Advanced,Demonstrate memory optimization,Complete analysis
+23,Systolic array utilization analysis,Portfolio,Project,High,Not Started,4,Advanced,Show hardware understanding,Complete analysis
+24,Watch CUDA MODE Lecture 28,CUDA MODE,Theory,Medium,Not Started,2,Advanced,Liger Kernel,Kernel library
+24,Watch CUDA MODE Lecture 32,CUDA MODE,Theory,Medium,Not Started,2,Advanced,Unsloth LLM Systems,Production systems
+24,Watch CUDA MODE Lecture 35,CUDA MODE,Theory,Medium,Not Started,2,Advanced,SGLang Performance,Inference optimization
+24,Study Anthropic scaling laws papers,Research,Theory,High,Not Started,2,Advanced,Understand company research,Paper summaries
+24,Practice whiteboard kernel optimization,Interview Prep,Practice,Critical,Not Started,3,Advanced,Prepare for technical interviews,Practice problems
+24,Write impressive performance story,Interview Prep,Practice,Critical,Not Started,2,Advanced,Prepare interview answer,Written answer
+24,Create portfolio README,Portfolio,Documentation,Critical,Not Started,2,Intermediate,Showcase all work,Complete README

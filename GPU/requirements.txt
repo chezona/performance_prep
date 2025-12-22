@@ -1,0 +1,30 @@
+# Core PyTorch with CUDA support
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# GPU Programming Frameworks
+triton>=2.0.0
+numba>=0.57.0
+
+# Machine Learning Libraries
+transformers>=4.20.0
+pandas>=1.5.0
+
+# Visualization and Logging
+matplotlib>=3.5.0
+loguru>=0.6.0
+tqdm>=4.64.0
+
+# Development and Profiling Tools
+click>=8.1.0
+tensorboard>=2.13.0
+
+# Data Processing
+numpy>=1.21.0
+
+# Note: You'll also need NVIDIA CUDA Toolkit installed separately
+# Visit: https://developer.nvidia.com/cuda-downloads
+
+
+

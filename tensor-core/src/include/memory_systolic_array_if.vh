@@ -1,0 +1,4 @@
+`ifndef MEMORY_SYSTOLIC_ARRAY_IF
+`define MEMORY_SYSTOLIC_ARRAY_IF
+
+`endif 

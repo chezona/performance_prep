@@ -1,0 +1,9 @@
+transcript
+work/
+.venv
+vsim.*
+<<<<<<< HEAD
+.vscode/
+=======
+obj_dir/
+>>>>>>> charlie-final-array
